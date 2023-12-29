@@ -1,18 +1,54 @@
-body {
-        background-color: #FFFAA0;
-}
-    
 .header {
-        background-color: #FFBF00;
+        background-color: #e7b930;
         text-align: center;
         padding: 20px;
         color: black;
-        font-size: 18px; 
+        font-size: 18px;
         border-radius: 5px;
-        border: 5px solid #888; 
+        border: 5px solid #302f2f;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.navigation {
+        border: 2px solid #2e2525;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+}
+      
+.navigation ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border: 2px solid #311d1d;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+}
+      
+.navigation ul li {
+        display: inline;
+        margin-right: 20px;
+}
+      
+.navigation ul li:last-child {
+        margin-right: 0;
+}
+      
+.navigation ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s ease;
+}
+      
+.navigation ul li a:hover {
+        color: #c9b065;
+}
+      
 h2 {
         font-family: Georgia, Serif;
         text-align: center;
@@ -35,40 +71,74 @@ div {
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-    
+
 #section_1 {
-        background-color: #FBEC5D;
-        color: #333;
-        border: 2px solid #888;
-        padding: 15px;
+        float: left;
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
 }
-        
+      
+.section-section1 {
+        width: 100%;
+        background-color: #EEDC82;
+        border: 2px solid #888;
+        border-radius: 5px;
+        padding: 15px;
+        color: #333;
+}
+
 #section_2 {
-        background-color: #FFDB58;
-        color: #333;
-        border: 2px solid #888;
-        padding: 15px;
+        float: left;
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        clear: left;
+        margin-top: 20px;
 }
-        
-#testimonials {
+
+.section-section2 {
+        width: 100%;
+        background-color: #EEDC82;
+        border: 2px solid #888;
+        border-radius: 5px;
+        padding: 15px;
+        color: #333;
+}
+      
+#gallery {
+        float: left;
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        clear: left; 
+        margin-top: 20px;
+}
+     
+.section-gallery {
+        width: 100%;
+        background-color: #EEDC82;
+        border: 2px solid #1e1e1e;
+        border-radius: 5px;
+        padding: 15px;
+        color: #333;
+}
+
+#testimonials,
+      #goals,
+      #comments {
+        margin-left: 35%; 
+        padding: 20px; 
+}
+      
+#section_1, #section_2, #testimonials, #goals, #comments, #journal{
         background-color: #EEDC82;
         color: #333;
-        border: 2px solid #888;
+        border: 2px solid #1e1e1e;
         padding: 15px;
-}
-        
-#goals {
-        background-color: #cab438 ;
-        color: #333;
-        border: 2px solid #888;
-        padding: 15px;
-}
-    
+}  
+
 #comments {
-        background-color:#e8e525;
-        color: #333;
-        border: 2px solid #888;
-        padding: 15px;
         text-align: center;
 }
     
@@ -127,7 +197,7 @@ textarea {
         font-family: Arial, Sans-serif;
 }
     
- button {
+button {
         width: 25%;
         border: 1px solid;
         padding: 10px 20px;
@@ -141,20 +211,21 @@ button:hover {
 }
     
 #gallery {
-        background-color: #ebd13d;
+        background-color: #EEDC82;
         color: #333;
-        border: 2px solid #888;
+        border: 2px solid #1e1e1e;
         padding: 15px;
         text-align: center;
         font-family: Georgia, Serif;
 }
     
 #gallery img {
-         width: 150px; 
-        height: 200px;
- }
+        width: 150px; 
+        height: 150px;
+        border-radius: 10px;
+}
     
- #comments_list {
+#comments_list {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -166,7 +237,7 @@ button:hover {
         margin-bottom: 10px; 
 }
     
- #country-container {
+#country-container {
         background-color:rgb(18, 211, 176); 
         padding: 20px; 
         border-radius: 8px;
@@ -177,19 +248,17 @@ button:hover {
 }
     
 #countries {
-        background-color: #e3f02a;
- }
-    
-body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
+        background-color: #ecea9b;
+        border: 2px solid #4a4848;
+        width: 80%; 
+        padding: 10px;
+        margin: 20px auto; 
 }
-    
+
 #go_to_countries {
         display: flex;
         justify-content: center;
+        width: 80%;
 }
     
 h1 {
@@ -198,7 +267,7 @@ h1 {
         margin-top: 20px;
 }
       
- #country_input {
+#country_input {
         padding: 8px;
         margin-right: 10px;
         width: 400px;
@@ -231,7 +300,6 @@ h1 {
       text-align: left;
       margin: 20px auto;
 }
-          
 #sameRegion ul {
         column-count: 3;
         column-gap: 20px;
@@ -244,4 +312,176 @@ h1 {
 #sameRegion ul li {
         break-inside: avoid;
         margin-bottom: 5px;
+}
+
+#journal {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #daee76;
+        padding: 20px;
+        margin-top: 50px;
+        overflow: hidden; 
+}
+
+.journal-image {
+        border: 2px solid #c7c259;
+        float: left; 
+        width: 30%; 
+        margin-right: 20px; 
+}
+      
+.journal-image img {
+        width: 150px;
+        height: 140px;
+        border-radius: 10px;
+}
+      
+.journal-text {
+        margin-left: 30%; 
+}
+            
+#k-pop {
+        background-color: #f8f398;
+        color: #333;
+        border: 2px solid #888;
+        padding: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Georgia", Serif;
+}
+
+fieldset {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+table button:first-child {
+  background-color: #007bff;
+  color: white;
+  margin-right: 5px;
+}
+
+table button:first-child:hover {
+  background-color: #0056b3;
+}
+
+table button:last-child {
+  background-color: #dc3545;
+  color: white;
+  padding: 4px 45px;
+}
+
+table button:last-child:hover {
+  background-color: #c82333;
+}
+
+@keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+}
+      
+.section-section1,
+.section-section2,
+.section-testimonials,
+.section-gallery,
+.section,
+.section-journal{
+        transition: transform 0.3s ease-in-out; 
+}
+      
+      
+.section-section1:hover,
+.section-section2:hover,
+.section-testimonials:hover,
+.section-gallery:hover,
+.section:hover,
+.section-journal:hover {
+animation: float 1s ease-in-out infinite; 
+}
+      
+.goal-columns {
+        background-color: #e1d873;
+        display: flex;
+        justify-content: space-around;
+}
+      
+.column {
+        background-color: #e7e375;
+        flex: 1;
+        padding: 10px;
+}
+      
+.column h3 {
+        text-align: center;
+}
+      
+.column ul {
+        list-style: none;
+        padding: 0;
 }
